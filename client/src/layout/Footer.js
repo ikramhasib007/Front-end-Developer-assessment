@@ -1,28 +1,27 @@
 
 const footerNavigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
+  airbnb: [
+    { name: 'About us', href: '#' },
+    { name: 'Careers', href: '#' },
     { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Policies', href: '#' },
+    { name: 'Help', href: '#' },
+    { name: 'Diversity & Belonging', href: '#' },
   ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+  discover: [
+    { name: 'Trus & Safety', href: '#' },
+    { name: 'Travel Credit', href: '#' },
+    { name: 'Gidt Cards', href: '#' },
+    { name: 'Airbnb Citizen', href: '#' },
+    { name: 'Business Travel', href: '#' },
+    { name: 'Guidebooks', href: '#' },
+    { name: 'Airbnbmag', href: '#' },
+  ],
+  hosting: [
+    { name: 'Why Host', href: '#' },
+    { name: 'Hospitality', href: '#' },
+    { name: 'Responsive Hosting', href: '#' },
+    { name: 'Community Center', href: '#' },
   ],
   social: [
     {
@@ -91,11 +90,11 @@ const footerNavigation = {
 
 function Footer() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="bg-white border-t" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="w-full mx-auto py-12 px-4 sm:max-w-3xl sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto px-4 max-w-4xl sm:px-0 py-12">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
@@ -103,7 +102,7 @@ function Footer() {
               src="https://tailwindui.com/img/logos/workflow-mark.svg?color=emerald&shade=400"
               alt="Company name"
             />
-            <p className="text-warm-gray-500 text-base">
+            <p className="text-warm-gray-500 text-sm">
               Making the world a better place through constructing elegant hierarchies.
             </p>
             <div className="flex space-x-6">
@@ -115,64 +114,48 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-12 grid grid-cols-3 gap-8 xl:mt-0 xl:col-span-2">
               <div>
-                <h3 className="text-sm font-semibold text-warm-gray-700 tracking-wider uppercase">Solutions</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {footerNavigation.solutions.map((item) => (
+                <h3 className="text-xs font-semibold text-warm-gray-700">Airbnb</h3>
+                <ul role="list" className="mt-2">
+                  {footerNavigation.airbnb.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
+                      <a href={item.href} className="text-xs text-warm-gray-700 hover:text-warm-gray-900">
                         {item.name}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-warm-gray-700 tracking-wider uppercase">Support</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {footerNavigation.support.map((item) => (
+              <div className="">
+                <h3 className="text-xs font-semibold text-warm-gray-700">Discover</h3>
+                <ul role="list" className="mt-2">
+                  {footerNavigation.discover.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
+                      <a href={item.href} className="text-xs text-warm-gray-700 hover:text-warm-gray-900">
                         {item.name}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-warm-gray-700 tracking-wider uppercase">Company</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {footerNavigation.company.map((item) => (
+                <h3 className="text-xs font-semibold text-warm-gray-700">Hosting</h3>
+                <ul role="list" className="mt-2">
+                  {footerNavigation.hosting.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
+                      <a href={item.href} className="text-xs text-warm-gray-700 hover:text-warm-gray-900">
                         {item.name}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-warm-gray-700 tracking-wider uppercase">Legal</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {footerNavigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-warm-gray-500 hover:text-warm-gray-900">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
         <div className="mt-12 border-t border-warm-gray-200 pt-8">
-          <p className="text-base text-warm-gray-400 xl:text-center">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+          <p className="text-xs text-warm-gray-400 xl:text-center">
+            &copy; 2022 Airbnb, Inc. All rights reserved.
           </p>
         </div>
       </div>

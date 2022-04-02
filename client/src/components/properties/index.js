@@ -114,10 +114,10 @@ function Properties({
         <h2 className='text-xl sm:text-2xl text-gray-700 font-medium'>{title}</h2>
 
         <div className="mt-3 sm:mt-5 space-y-4">
-          <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-3.5 lg:grid-cols-5 lg:gap-x-3.5">
+          <ul role="list" className="grid grid-cols-2 gap-x-3.25 gap-y-8 sm:grid-cols-3 sm:gap-x-3.25 lg:grid-cols-5">
             {properties.map((property) => (
               <li key={property.id} className="relative">
-                <div className="group block w-full aspect-w-10 aspect-h-15 rounded bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
+                <div className="group block w-full aspect-w-10 aspect-h-15 bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
                   <img src={property.pictures[0].imageUrl} alt="" className="object-cover pointer-events-none group-hover:opacity-75" />
                   <button type="button" className="absolute inset-0 focus:outline-none">
                     <span className="sr-only">View details for {property.title}</span>
