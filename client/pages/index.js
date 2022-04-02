@@ -1,7 +1,11 @@
+import Layout from "src/layout"
+import Home from 'src/routes/home'
 
 function IndexPage() {
   return (
-    <div>IndexPage</div>
+    <Layout>
+      <Home />
+    </Layout>
   )
 }
 

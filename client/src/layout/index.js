@@ -1,3 +1,4 @@
+import Hero from 'components/hero'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -10,6 +11,8 @@ function Layout({ children }) {
 
       <main>
         <div className='mx-auto max-w-4xl my-7'>
+          <Hero />
+
           {children}
         </div>
       </main>
