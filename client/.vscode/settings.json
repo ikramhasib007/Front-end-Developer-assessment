@@ -1,0 +1,11 @@
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  }
+}
