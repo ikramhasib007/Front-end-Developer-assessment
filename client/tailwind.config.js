@@ -42,11 +42,12 @@ module.exports = {
         cyan: colors.cyan,
         green: colors.green,
         primary: colors.rose,
-        neutral: colors.slate,
+        neutral: colors.emerald,
         danger: colors.red,
         success: colors.emerald,
         warning: colors.yellow,
         grape: colors.purple,
+        'warm-gray': colors.stone,
 
         facebook: '#039be5',
         twitter: '#03A9F4',
@@ -64,6 +65,8 @@ module.exports = {
         serif: ['Merriweather', 'serif'],
       },
       fontSize: {
+        'tiny': ['0.625rem', '1rem'],
+        'xxs': ['0.75rem', '1rem'],
         '2.5xl': ['1.625rem', '2rem']
       },
       spacing: {
