@@ -69,6 +69,9 @@ module.exports = {
         'xxs': ['0.75rem', '1rem'],
         '2.5xl': ['1.625rem', '2rem']
       },
+      rotate: {
+        '135': '135deg',
+      },
       spacing: {
         '0.25': '0.0625rem',
         '0.75': '0.1875rem',
