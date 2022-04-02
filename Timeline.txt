@@ -1,0 +1,8 @@
+1. Landing Page UI design - 2 hours
+2. Details Page UI design - 2 hours
+3. Search Page UI design - 2 hours
+4. Database schema design - 1 hours
+5. Property CRUD (including client, server and API test) - 4 hours
+6. Property pagination - 1 hours
+7. Rendering details page from the API endpoints - 1 hours
+8. Rendering search page with backend API search - 2 hours
