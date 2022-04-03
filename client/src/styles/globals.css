@@ -5,7 +5,7 @@
 @import "./components/input.css";
 @import "./components/common.css";
 @import "./components/animation.css";
-@import "./components/react-datepicker.css";
+@import "./components/_datepicker.css";
 @import "./components/utils.css";
 
 @import "tailwindcss/utilities";
