@@ -30,10 +30,13 @@ EMAIL_FROM=
 SENDGRID_API_KEY=
 ```
 
-## This is a next.js client application
+## [Client] This is a next.js client application
 download the resource on your local machine, navigate client folder and than run the below command from your terminal,
 
 ```
 yarn
 yarn run dev
 ```
+and then hit the url on your browser `http://localhost:3000/`
+
+## [Client] UI design complete. [Server] just scafollding prepared
