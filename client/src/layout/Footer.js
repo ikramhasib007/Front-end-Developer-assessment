@@ -71,8 +71,8 @@ function Footer() {
         Footer
       </h2>
       <div className="mx-auto px-4 max-w-4xl sm:px-0 py-12">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 xl:col-span-1">
+        <div className="lg:grid lg:grid-cols-3 lg:gap-8">
+          <div className="space-y-8 lg:col-span-1">
             <div className='px-10 space-y-2'>
               <Select
                 className="focus:ring-neutral-500 focus:border-neutral-500 block w-full shadow-sm sm:text-sm border-gray-200 rounded-sm"
@@ -90,7 +90,7 @@ function Footer() {
               />
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-3 gap-8 xl:mt-0 xl:col-span-2">
+          <div className="mt-12 grid grid-cols-3 gap-8 lg:mt-0 lg:col-span-2">
               <div>
                 <h3 className="text-xs font-semibold text-warm-gray-700">Airbnb</h3>
                 <ul role="list" className="mt-2 -space-y-1.5">
