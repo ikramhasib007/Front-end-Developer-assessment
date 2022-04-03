@@ -1,11 +1,12 @@
+import Link from 'next/link'
 import { Disclosure } from '@headlessui/react'
 import { SearchIcon } from '@heroicons/react/solid'
 import { BellIcon, MenuIcon, XIcon, CalendarIcon, UsersIcon } from '@heroicons/react/outline'
 import { classNames } from 'src/utils'
 
 const navigation = [
-  { name: 'For You', href: '#', current: true },
-  { name: 'Homes', href: '#', current: false },
+  { name: 'For You', href: '/', current: true },
+  { name: 'Homes', href: '/', current: false },
   { name: 'Experiences', href: '#', current: false },
   { name: 'Places', href: '#', current: false },
 ]
@@ -112,17 +113,17 @@ function Header() {
             </div>
             <nav className="hidden lg:pt-2 lg:flex lg:space-x-8" aria-label="Global">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'text-neutral-500 border-neutral-500' : 'text-gray-600 border-transparent hover:text-gray-800 hover:border-gray-400',
-                    'pt-2 pb-2.5 -mb-0.5 border-b-2 inline-flex items-center text-xs sm:text-tiny font-medium uppercase'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </a>
+                <Link href={item.href} passHref>
+                  <a
+                    className={classNames(
+                      item.current ? 'text-neutral-500 border-neutral-500' : 'text-gray-600 border-transparent hover:text-gray-800 hover:border-gray-400',
+                      'pt-2 pb-2.5 -mb-0.5 border-b-2 inline-flex items-center text-xs sm:text-tiny font-medium uppercase'
+                    )}
+                    aria-current={item.current ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </a>
+                </Link>
               ))}
             </nav>
           </div>

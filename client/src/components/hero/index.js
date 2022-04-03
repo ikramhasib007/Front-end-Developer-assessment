@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { CalendarIcon, DesktopComputerIcon } from '@heroicons/react/outline'
 import { SelectorIcon, UserIcon } from '@heroicons/react/solid'
 
@@ -138,12 +139,11 @@ function Hero() {
             </div>
 
             <div className='relative w-full sm:w-auto block sm:inline-flex rounded-sm'>
-              <button
-                type="button"
-                className="relative w-full sm:w-auto block sm:inline-flex items-center px-6 py-2 border border-transparent bg-blue-500 text-sm font-bold text-white rounded-sm hover:bg-blue-600 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
-              >
-                Search
-              </button>
+              <Link href={'/properties'} as="/properties" passHref>
+                <a className="relative w-full sm:w-auto block sm:inline-flex items-center px-6 py-2 border border-transparent bg-blue-500 text-sm font-bold text-white rounded-sm hover:bg-blue-600 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                  Search
+                </a>
+              </Link>
             </div>
 
           </div>

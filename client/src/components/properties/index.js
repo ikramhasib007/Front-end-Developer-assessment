@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { StarIcon } from '@heroicons/react/solid'
 import { classNames } from 'src/utils'
+import { useRouter } from 'next/router'
 
 const properties = [
   {
@@ -108,6 +109,8 @@ const properties = [
 function Properties({
   title
 }) {
+  const router = useRouter()
+
   return (
     <div className='bg-white'>
       <div className='mx-auto px-4 max-w-7xl sm:px-0'>
@@ -119,7 +122,7 @@ function Properties({
               <li key={property.id} className="relative">
                 <div className="group block w-full aspect-w-10 aspect-h-15 bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
                   <img src={property.pictures[0].imageUrl} alt="" className="object-cover pointer-events-none group-hover:opacity-75" />
-                  <button type="button" className="absolute inset-0 focus:outline-none">
+                  <button type="button" onClick={() => router.push('/properties/details')} className="absolute inset-0 focus:outline-none">
                     <span className="sr-only">View details for {property.title}</span>
                   </button>
                 </div>
